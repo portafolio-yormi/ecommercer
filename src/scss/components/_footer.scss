@@ -1,0 +1,35 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    width: 100%;
+    height: 150px;
+    background: $brown;
+    &.left{
+        width: 100%;
+        display: block;
+    }
+    &.right{
+        width: 100%;
+        display: block;
+    }
+    p{
+        font-family: $font-2;
+        font-size: 1.3rem;
+        color: $brown-light;
+    }
+}
+
+
+
+@media screen and(max-width:768px) {
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        height: 250px;
+        .left,.right{
+            text-align: center;
+        }
+    }
+}

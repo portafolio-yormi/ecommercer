@@ -1,0 +1,7 @@
+// * Grid con CSS Grid
+.gallery{
+    display: grid;
+    gap: 2rem;
+    grid-auto-rows: 30rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+}

@@ -1,0 +1,51 @@
+.card {
+    width: 500px;
+    height: 450px;
+    transition: .5s;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover{
+        background: lighten($brown,86%);
+        transition: .5s;
+    }
+    &-img{
+        width: 250px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    &-caption{
+        text-align: center;
+        .caption-title{
+            font-family: $font-1;
+            font-size: 1.6rem;
+            margin: 10px 0;
+            color: $brown;
+        }
+        .caption-text{
+            font-family: $font-2;
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: $brown-light;
+        }
+        .caption-price{
+            font-family: $font-2 !important;
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin: 10px 0;
+            color: $red;
+            i{
+                font-size: 1rem;
+                margin-right: 5px;
+                color: $brown-light;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card{
+        width: 100%;
+        height: auto;
+    }
+}

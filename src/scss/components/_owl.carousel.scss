@@ -1,0 +1,175 @@
+@import 'owl.carousel/core';
+@import 'owl.carousel/animate';
+@import 'owl.carousel/autoheight';
+@import 'owl.carousel/lazyload';
+@import 'owl.carousel/video';
+@import 'owl.carousel/owl.theme.default';
+
+
+.owl-slider{
+	position: relative;
+
+	.item{
+		a{
+			text-decoration: none;
+		}
+		.caption{
+			padding: 20px 5px;
+			position: absolute;
+			top: 50%;
+			z-index: 2;
+			transform: translateY(-50%);
+			@include respond-to("large-mx"){
+				top: 60%;
+				transform: translateY(-56%);
+				width: 70%;
+			}
+			@include respond-to("small-mx"){
+				// top: 60%;
+				transform: translateY(-56%);
+				width: 50%;
+			}
+			@include respond-to("movil-mx"){
+				top: 75%;
+				width: 70%;
+				// left: 30%;
+			}
+			&-title-1{
+				display: flex;
+				align-items: center;
+				// font-family: $font;
+				font-size: 58px;
+				font-weight: 700;
+				line-height: 58px;
+				@include respond-to("large-mx"){
+					font-size: 34px;
+				}
+				@include respond-to("movil-mx"){
+					font-size: 28px;
+				}
+				// color: $secondary;
+				i{
+					// color:$primary;
+					font-size: 40px;
+				}
+			}
+
+			&-sub-title-1{
+				// font-family: $font;
+				font-size: 34px;
+				font-weight: 600;
+				line-height: 35px;
+				// color: $primary;
+				margin: 10px 0;
+				@include respond-to("large-mx"){
+					font-size: 24px;
+				}
+
+				@include respond-to("movil-mx"){
+					font-size: 18px;
+					margin: 5px 0;
+				}
+			}
+
+			&-title-2{
+				display: flex;
+				align-items: center;
+				// font-family: $font;
+				font-size: 40px;
+				font-weight: 700;
+				line-height: 40px;
+				@include respond-to("large-mx"){
+					font-size: 40px;
+				}
+				@include respond-to("movil-mx"){
+					font-size: 30px;
+				}
+				// color: $secondary;
+				i{
+					// color:$primary;
+					font-size: 30px;
+				}
+			}
+
+			&-sub-title-2{
+				// font-family: $font;
+				font-size: 22px;
+				font-weight: 600;
+				line-height: 22px;
+				// color: $primary;
+				margin: 10px 0;
+				@include respond-to("large-mx"){
+					font-size: 22px;
+				}
+
+				@include respond-to("movil-mx"){
+					font-size: 20px;
+					margin: 5px 0;
+				}
+			}
+
+			&-text{
+				// font-family: $font;
+				font-size: 22px;
+				font-weight: 400;
+				line-height: 22px;
+				margin-bottom: 0;
+				// color: $dark;
+				padding-bottom: 30px;
+				@include respond-to("large-mx"){
+					font-size: 22px;
+					padding-bottom: 15px;
+					width: 70%;
+				}
+				@include respond-to("movil-mx"){
+					width: 80%;
+					font-size: 14px;
+					line-height: 18px;
+				}
+			}
+			&-group{
+				margin: 20px 0 !important;
+			}
+		}
+	}
+	// .owl-nav.disabled+.owl-dots {
+	// 	position: absolute ;
+	// 	left: 5% !important;
+	// 	top: 90%;
+	// 	z-index: 3 !important;
+	// 	margin: 0 !important;
+	// 	text-align: left !important;
+	// 	@include respond-to("small-mx"){
+	// 		left: 0 !important;
+	// 		bottom: 6px !important;
+	// 		padding-left: 10% !important;
+	// 	}
+	// }
+	.owl-nav{
+		.owl-next, .owl-prev {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			i{
+				background: rgba($brown,  .4);
+				margin: 20px;
+				padding: 10px;
+				color: $white;
+				border-radius: 4px;
+				font-size: 20px;
+			}
+		}
+		.owl-next{
+			left: 0;
+		}
+		.owl-prev{
+			right: 0;
+		}
+	}
+	.owl-dots{
+		position: absolute;
+		bottom: 0;
+		text-align: center;
+	}
+}
+

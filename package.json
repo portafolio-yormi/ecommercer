@@ -1,0 +1,23 @@
+{
+  "name": "sliderowl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/html/index.html",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.2.1",
+    "@parcel/transformer-sass": "^2.2.1",
+    "parcel": "^2.2.1"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "jquery": "^3.6.0",
+    "normalize.css": "^8.0.1",
+    "owl.carousel": "^2.3.4"
+  }
+}

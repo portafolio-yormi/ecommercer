@@ -1,0 +1,52 @@
+// ?Fonts
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Indie+Flower&family=Open+Sans:wght@400;500;600&display=swap');
+$font-1: 'Fredoka One', cursive;
+$font-2: 'Indie Flower', cursive;
+$font-3: 'Open Sans', sans-serif;
+
+
+
+// ?Colors
+
+$white:  #fff;
+$yellow: #FFCE45;
+$black: #000;
+$brown: #171010;
+$brown-light: #9D5C0D;
+$gray: #EEEEEE;
+$gray-dark: #6e6e6e;
+$red: #e14242;
+
+$container-full: 100%;
+$container-max-width: 90%;
+// ?Maps
+
+$colors: (
+    'white'     :$white, 
+    'black'     :$black, 
+    'brown'     :$brown, 
+    'gray'      :$gray,
+    'gray-dark' :$gray-dark
+);
+$text-aligns: (
+    center: center,
+    left: left,
+    right: right,
+    justify: justify
+);
+
+$headings: "1" $font-1 3rem 2.2rem 1.8rem 2rem, "2" $font-1 1.5rem 2.2rem 1.5rem 2.2rem;
+$subs: "1" $font-2 1.3rem 2.2rem 1.3rem 2.2rem,"1" $font-2 1.1rem 2.2rem 1.1rem 2.2rem;
+
+//Mapa de resolucion
+$breakpoints: (
+    'movil-mn':  ( min-width:  500px ),
+    'small-mn':  ( min-width:  767px ),
+    'medium-mn': ( min-width:  992px ),
+    'large-mn':  ( min-width: 1200px ),
+    'movil-mx':  ( max-width:  500px ),
+    'small-mx':  ( max-width:  767px ),
+    'medium-mx': ( max-width:  992px ),
+    'large-mx':  ( max-width: 1200px )
+) !default;
+

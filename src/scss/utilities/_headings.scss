@@ -1,0 +1,14 @@
+@each $name, $ff, $fz, $lh, $fzs, $lhs in $headings {
+    .heading-#{$name}{
+        font-family: $ff;
+        font-size: $fz;
+        line-height: $lh;
+
+    }
+    @media  screen and (max-width: 500px) {
+        .heading-#{$name}{
+            font-size: $fzs;
+            line-height: $lhs;
+        }
+    }
+}

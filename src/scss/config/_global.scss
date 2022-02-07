@@ -1,0 +1,81 @@
+// TODO: To reset DOM
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $font-3;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+//TODO: ./To reset DOM
+
+body{
+    background: $white;
+    font-size: 16px;
+}
+
+
+//  * Container
+.container {
+    max-width: $container-max-width;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+//  * Container fluid
+.container-full {
+    max-width: $container-full;
+    width: 100%;
+}
+
+// * Margins
+.my-1{margin: 1rem 0;}
+.my-2{margin: 2rem 0;}
+.my-3{margin: 3rem 0;}
+
+// * Paddings
+.py-1{padding: 1rem 0;}
+.py-2{padding: 2rem 0;}
+.py-3{padding: 3rem 0;}
+.py-4{padding: 4rem 0;}
+.py-5{padding: 5rem 0;}
+
+// * img resposive
+.responsive{
+    width: 100%;
+    height: auto;
+}
+
+
+// * Redes Socilas
+.redsocial{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+        display: inline-block;
+        margin-right: 20px;
+        a{
+            color: $brown-light;
+            font-size: 1.4rem;
+            :hover{
+                transition: .5s;
+                color: darken($brown-light, 10%);
+            }
+        }
+    }
+}
+
+

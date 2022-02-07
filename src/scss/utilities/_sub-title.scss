@@ -1,0 +1,14 @@
+@each $name, $ff, $fz, $lh, $fzs, $lhs in $subs {
+    .sub-title#{$name}{
+        font-family: $ff;
+        font-size: $fz;
+        line-height: $lh;
+
+    }
+    @media  screen and (max-width: 500px) {
+        .sub-title#{$name}{
+            font-size: $fzs;
+            line-height: $lhs;
+        }
+    }
+}
